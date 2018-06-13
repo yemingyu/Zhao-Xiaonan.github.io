@@ -1,13 +1,13 @@
 # Site settings
 title: Zhao-Xiaonan
-description: 'Zhao-Xiaonan - a minimal, responsive theme for Jekyll'
+description: 'Zhao Xiaonan blog'
 url: 'https://zhao-xiaonan.github.io/' 
 baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 
 author:
-  name: 'Josh Gerdes'
-  email: josh@joshgerdes.com
+  name: 'Zhao Xiaonan'
+  email: zhaoxiaonan724@gmail.com
   twitter_username: joshgerdes
   github_username:  joshgerdes
   linkedin_username:  joshgerdes
