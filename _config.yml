@@ -8,9 +8,9 @@ baseurl: '/'
 author:
   name: 'Zhao Xiaonan'
   email: zhaoxiaonan724@gmail.com
-  twitter_username: joshgerdes
-  github_username:  joshgerdes
-  linkedin_username:  joshgerdes
+  twitter_username: Zhao-Xiaonan
+  github_username:  Zhao-Xiaonan
+  linkedin_username:  Zhao-Xiaonan
 
 # Build settings
 destination: _site
