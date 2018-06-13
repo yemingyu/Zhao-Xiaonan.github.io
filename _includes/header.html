@@ -29,7 +29,7 @@
           
             {% if site.author.twitter_username %}
               <!-- Twitter -->
-<!--               <li class="navigation__item">
+              <!-- <li class="navigation__item">
                 <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
                   <i class="icon icon-social-twitter"></i>
                   <span class="label">Twitter</span>
@@ -47,14 +47,18 @@
               </li> -->
             {% endif %}
               
-              
+
+
+            {% if site.author.weibo_id %}  
             <!-- Weibo -->
             <li class="navigation__item">
-              <a href="http://weibo.com/2267020712/" title="笑笑的微博" target="_blank">
-                <i class='social fa fa-weibo'></i>
+              <a href="http://weibo.com/{{ site.author.weibo_id }}/" title="笑笑的微博" target="_blank">
+                <i class='icon icon-social-bing'></i>
                 <span class="label">Weibo</span>
               </a>
             </li>
+            {% endif %}
+
 
             {% if site.author.github_username %}
               <!-- GitHub -->
@@ -65,6 +69,21 @@
                 </a>
               </li>
             {% endif %}
+
+
+
+            {% if site.author.jianshu_id %}
+              <!-- jian shu -->
+              <li class="navigation__item">
+                <a href="https://www.jianshu.com/p/{{ jianshu_id }}" title="笑笑的简书" target="_blank">
+                  <i class="icon icon-social-joomla"></i>
+                  <span class="label">Jian Shu</span>
+                </a>
+              </li>
+            {% endif %}
+
+
+
 
             {% if site.author.email %}
               <!-- Email -->
