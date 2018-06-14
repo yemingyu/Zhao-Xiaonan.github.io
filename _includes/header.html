@@ -1,9 +1,11 @@
 <span class="mobile btn-mobile-menu">
-  <i class="icon icon-list btn-mobile-menu__icon"></i>
-  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+  <!-- <i class="icon icon-list btn-mobile-menu__icon"></i> -->
+  <!-- <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i> -->
+  <i class="fa fa-list btn-mobile-menu__icon"></i>
+  <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
 </span>
   
-<header class="panel-cover" style="background-image: url({{ "images/cover.jpg" | prepend: site.baseurl }})">
+<header class="panel-cover" style="background-image: url({{ "images/Manipulation.jpg" | prepend: site.baseurl }})">
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
@@ -53,7 +55,7 @@
             <!-- Weibo -->
             <li class="navigation__item">
               <a href="http://weibo.com/{{ site.author.weibo_id }}/" title="笑笑的微博" target="_blank">
-                <i class='icon icon-social-bing'></i>
+                <i class='social fa fa-weibo'></i>
                 <span class="label">Weibo</span>
               </a>
             </li>
@@ -64,7 +66,7 @@
               <!-- GitHub -->
               <li class="navigation__item">
                 <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="icon icon-social-github"></i>
+                  <i class="social fa fa-github"></i>
                   <span class="label">GitHub</span>
                 </a>
               </li>
@@ -89,7 +91,7 @@
               <!-- Email -->
               <li class="navigation__item">
                 <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="icon icon-mail"></i>
+                  <i class="social fa fa-envelope"></i>
                   <span class="label">Email</span>
                 </a>
               </li>
@@ -98,7 +100,7 @@
             <!-- RSS -->
             <li class="navigation__item">
               <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
-                <i class="icon icon-rss"></i>
+                <i class="social fa fa-rss"></i>
                 <span class="label">RSS</span>
               </a>
             </li>
