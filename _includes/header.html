@@ -1,8 +1,8 @@
 <span class="mobile btn-mobile-menu">
-  <!-- <i class="icon icon-list btn-mobile-menu__icon"></i> -->
-  <!-- <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i> -->
-  <i class="fa fa-list btn-mobile-menu__icon"></i>
-  <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+  <!-- <i class="fa fa-list btn-mobile-menu__icon"></i> -->
+  <!-- <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i> -->
 </span>
   
 <header class="panel-cover" style="background-image: url({{ "images/Manipulation.jpg" | prepend: site.baseurl }})">
@@ -55,7 +55,7 @@
             <!-- Weibo -->
             <li class="navigation__item">
               <a href="http://weibo.com/{{ site.author.weibo_id }}/" title="笑笑的微博" target="_blank">
-                <i class='social fa fa-weibo'></i>
+                <i class='icon icon-social-blogger'></i>
                 <span class="label">Weibo</span>
               </a>
             </li>
@@ -66,7 +66,7 @@
               <!-- GitHub -->
               <li class="navigation__item">
                 <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
-                  <i class="social fa fa-github"></i>
+                  <i class="icon icon-social-github"></i>
                   <span class="label">GitHub</span>
                 </a>
               </li>
@@ -78,32 +78,29 @@
               <!-- jian shu -->
               <li class="navigation__item">
                 <a href="https://www.jianshu.com/p/{{ jianshu_id }}" title="笑笑的简书" target="_blank">
-                  <i class="icon icon-social-joomla"></i>
+                  <i class="icon icon-book"></i>
                   <span class="label">Jian Shu</span>
                 </a>
               </li>
             {% endif %}
 
-
-
-
             {% if site.author.email %}
               <!-- Email -->
               <li class="navigation__item">
                 <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
-                  <i class="social fa fa-envelope"></i>
+                  <i class="icon icon-mail"></i>
                   <span class="label">Email</span>
                 </a>
               </li>
             {% endif %}
 
             <!-- RSS -->
-            <li class="navigation__item">
+            <!-- <li class="navigation__item">
               <a href="{{ "feed.xml" | prepend: site.baseurl }}" title="Subscribe" target="_blank">
-                <i class="social fa fa-rss"></i>
+                <i class="icon icon-rss"></i>
                 <span class="label">RSS</span>
               </a>
-            </li>
+            </li> -->
           
             </ul>
           </nav>
