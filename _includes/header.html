@@ -1,8 +1,8 @@
 <span class="mobile btn-mobile-menu">
   <i class="icon icon-list btn-mobile-menu__icon"></i>
   <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
-  <!-- <i class="fa fa-list btn-mobile-menu__icon"></i> -->
-  <!-- <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i> -->
+  <i class="fa fa-list btn-mobile-menu__icon"></i>
+  <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
 </span>
   
 <header class="panel-cover" style="background-image: url({{ "images/Manipulation.jpg" | prepend: site.baseurl }})">
@@ -10,19 +10,23 @@
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
+      <!-- 头像及博客名 -->
         <a href="{{ site.baseurl }}" title="link to home of {{ site.title }}">
           <img src="{{ "images/profile-zxn.jpg" | prepend: site.baseurl }}" class="user-image" alt="My Profile Photo">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         </a>
+
         <hr class="panel-cover__divider">
+        <!-- 描述 -->
         <p class="panel-cover__description">{{ site.description }}</p>
+
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
+        <!-- 链接及logo -->
         <div class="navigation-wrapper">
-
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="/#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
             </ul>
           </nav>
 
@@ -55,7 +59,8 @@
             <!-- Weibo -->
             <li class="navigation__item">
               <a href="http://weibo.com/{{ site.author.weibo_id }}/" title="笑笑的微博" target="_blank">
-                <i class='icon icon-social-blogger'></i>
+                <!-- <i class='icon icon-social-blogger'></i> -->
+                <i class='social fa fa-weibo'></i>
                 <span class="label">Weibo</span>
               </a>
             </li>
@@ -77,7 +82,7 @@
             {% if site.author.jianshu_id %}
               <!-- jian shu -->
               <li class="navigation__item">
-                <a href="https://www.jianshu.com/p/{{ jianshu_id }}" title="笑笑的简书" target="_blank">
+                <a href="https://www.jianshu.com/u/{{ jianshu_id }}" title="笑笑的简书" target="_blank">
                   <i class="icon icon-book"></i>
                   <span class="label">Jian Shu</span>
                 </a>
