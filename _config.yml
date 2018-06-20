@@ -11,27 +11,28 @@ baseurl: '/'
 author:
   name: 'Zhao Xiaonan'
   email: zhaoxiaonan724@gmail.com
-  twitter_username: Zhao-Xiaonan
+  # twitter_username: Zhao-Xiaonan
   github_username:  Zhao-Xiaonan
-  linkedin_username:  Zhao-Xiaonan
+  # linkedin_username:  Zhao-Xiaonan
   weibo_id: 2267020712
   jianshu_id: ce656da10d6c
-
-
 
 # 侧边栏
 sidebar: true
 sidebar-about-description: "侧边栏描述"
 sidebar-avatar: images\profile-zxn.jpg
 
-
-
 # Build settings
 destination: _site
+gems: [jekyll-paginate]
 paginate: 10
-permalink: /:year/:title/
+#paginate_path: "/blog/page:num"
+permalink: /blog/:year/:month/:day/:title/
+#permalink: "page:num"
 markdown: kramdown
+#highlighter: pygments
 highlighter: pygments
+excerpt_separator: "\n\n\n"
 
 kramdown:
   # use Github Flavored Markdown
