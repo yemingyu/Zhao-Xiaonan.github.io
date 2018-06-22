@@ -1,8 +1,8 @@
 # Site settings
 title: 笑笑     # 博客标题
-SEOTitle: 笑笑 | BLOG     # 浏览器上显示的
-header-img: images\Manipulation.jpg    # 背景图片 
-description: 不可与夏虫语冰   # 网站介绍
+# SEOTitle: 笑笑 | BLOG     # 浏览器上显示的
+# header-img: assets\images\Manipulation.jpg    # 背景图片 
+description: 不与夏虫语冰   # 网站介绍
 keyword: keyword     # 关键字
 url: 'https://zhao-xiaonan.github.io/' 
 baseurl: '/'
@@ -18,9 +18,9 @@ author:
   jianshu_id: ce656da10d6c
 
 # 侧边栏
-sidebar: true
-sidebar-about-description: "侧边栏描述"
-sidebar-avatar: images\profile-zxn.jpg
+# sidebar: true
+# sidebar-about-description: "侧边栏描述"
+# sidebar-avatar: images\profile-zxn.jpg
 
 # Build settings
 destination: _site
